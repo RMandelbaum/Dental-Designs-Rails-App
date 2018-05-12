@@ -1,0 +1,36 @@
+CRUD application
+
+Members login
+Members sign up
+
+Oauth sign up with google
+
+user Leave review
+user make appointments
+
+/home
+/signup
+/login
+/logout
+/user-profile
+/user/review
+
+Models:
+Users
+
+has reviews
+has appoitnments
+  :id
+  :username
+  :email
+  :password
+
+Reviews
+  :belongs_to user
+  :content
+  :user_id
+
+Appointments
+  :belongs_to user
+  :time_date
+  :user_id
